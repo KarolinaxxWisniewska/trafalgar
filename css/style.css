@@ -5,11 +5,19 @@
 }
 
 @font-face {
-  font-family: "Mulish";
-  src: url("./../fonts/Mulish.ttf") format("truetype");
+  font-family: "Mulish-Regular";
+  src: url("./../fonts/Mulish-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Mulish-Light";
+  src: url("./../fonts/Mulish-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Mulish-Bold";
+  src: url("./../fonts/Mulish-Bold.ttf") format("truetype");
 }
 html {
-  font-family: "Mulish";
+  font-family: "Mulish-Regular";
   font-size: 62.5%;
 }
 
@@ -18,7 +26,7 @@ body {
   flex-direction: column;
   align-items: center;
 }
-body .slider__section {
+body .slider {
   color: #fff;
   background-color: #5A98F2;
   border-radius: 2.4rem;
@@ -28,16 +36,26 @@ body .slider__section {
   text-align: center;
   margin: 1rem;
 }
-body .slider__section .paragraph__title {
+body .slider .slider__title {
   padding: 2rem 1rem;
   font-size: 3rem;
 }
-body .slider__section .paragraph__text {
+body .slider .slider__text {
   padding: 2rem 1rem;
   font-style: normal;
   font-weight: normal;
   font-size: 1.3rem;
   line-height: 2rem;
+}
+body .slider .slider__name {
+  font-size: 2rem;
+  line-height: 2rem;
+  padding: 2rem 1rem;
+}
+body .slider .slider__profession {
+  font-size: 1.3rem;
+  line-height: 2rem;
+  padding: 0rem 3rem;
 }
 
 /*# sourceMappingURL=style.css.map */

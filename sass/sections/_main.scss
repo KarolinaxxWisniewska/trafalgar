@@ -1,5 +1,5 @@
 html {
-    font-family: "Mulish";
+    font-family: "Mulish-Regular";
     font-size: 62.5%;
 }
 
@@ -8,7 +8,7 @@ body {
     flex-direction: column;
     align-items: center;
 
-    .slider__section {
+    .slider {
         color: $color-white-100;
         background-color: $color-blue-150;
         border-radius: 2.4rem;
@@ -18,17 +18,29 @@ body {
         text-align: center;
         margin: 1rem;
 
-        .paragraph__title {
+        .slider__title {
             padding: 2rem 1rem;
             font-size: 3rem;
         }
 
-        .paragraph__text {
+        .slider__text {
             padding: 2rem 1rem;
             font-style: normal;
             font-weight: normal;
             font-size: 1.3rem;
             line-height: 2rem;
+        }
+
+        .slider__name {
+            font-size: 2rem;
+            line-height: 2rem;
+            padding: 2rem 1rem;
+        }
+
+        .slider__profession {
+            font-size: 1.3rem;
+            line-height: 2rem;
+            padding: 0rem 3rem;
         }
     }
 }
