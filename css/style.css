@@ -8,5 +8,36 @@
   font-family: "Mulish";
   src: url("./../fonts/Mulish.ttf") format("truetype");
 }
+html {
+  font-family: "Mulish";
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .slider__section {
+  color: #fff;
+  background-color: #5A98F2;
+  border-radius: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 1rem;
+}
+body .slider__section .paragraph__title {
+  padding: 2rem 1rem;
+  font-size: 3rem;
+}
+body .slider__section .paragraph__text {
+  padding: 2rem 1rem;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.3rem;
+  line-height: 2rem;
+}
 
 /*# sourceMappingURL=style.css.map */
