@@ -26,7 +26,55 @@ body {
   flex-direction: column;
   align-items: center;
 }
-body .slider {
+
+.button {
+  font-family: "Mulish-Bold";
+  width: 20rem;
+  height: 5.6rem;
+  border: 0.1rem solid;
+  text-align: center;
+  display: inline-block;
+  font-size: 1.6rem;
+  border-radius: 3rem;
+  background-color: #458FF6;
+  color: #fff;
+}
+
+.grid__articles {
+  display: grid;
+  grid-template-columns: auto;
+  padding: 1rem;
+  max-width: 100%;
+  gap: 1rem;
+  border-radius: 2.4rem;
+}
+.grid__articles .grid__item {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+.grid__articles .grid__item .item__image {
+  max-width: 30rem;
+}
+.grid__articles .grid__item .grid__title {
+  font-family: "Mulish-Bold";
+  font-size: 1.6rem;
+  padding: 2.2rem 2.2rem 2.5rem 2.5rem;
+}
+.grid__articles .grid__item .grid__summary {
+  font-family: "Mulish-Light";
+  font-size: 1.4rem;
+  padding-left: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+.grid__articles .grid__item .grid__cta {
+  font-family: "Mulish-Regular";
+  font-size: 1.5rem;
+  padding-left: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.slider__container {
   color: #fff;
   background-color: #5A98F2;
   border-radius: 2.4rem;
@@ -36,26 +84,72 @@ body .slider {
   text-align: center;
   margin: 1rem;
 }
-body .slider .slider__title {
+.slider__container .slider__title {
   padding: 2rem 1rem;
   font-size: 3rem;
 }
-body .slider .slider__text {
+.slider__container .slider__text {
   padding: 2rem 1rem;
   font-style: normal;
   font-weight: normal;
   font-size: 1.3rem;
   line-height: 2rem;
 }
-body .slider .slider__name {
+.slider__container .slider__name {
   font-size: 2rem;
   line-height: 2rem;
   padding: 2rem 1rem;
 }
-body .slider .slider__profession {
+.slider__container .slider__profession {
   font-size: 1.3rem;
   line-height: 2rem;
-  padding: 0rem 3rem;
+  padding: 1rem 3rem;
+}
+
+.slider {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+}
+.slider .arrow {
+  width: 3rem;
+  height: 2rem;
+  margin: 0 2rem;
+}
+.slider .dot {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  height: 10px;
+  width: 10px;
+  background-color: #5B9BF3;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0.9rem;
+}
+
+.header__ .header__image {
+  padding: 1rem;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.articles {
+  max-width: 32rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.articles .slider__title {
+  font-size: 2rem;
+  font-family: "Mulish-Bold";
+  padding-bottom: 1rem;
+}
+.articles hr {
+  width: 10%;
+  align-self: center;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,38 @@
+.grid__articles {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 1rem;
+    max-width: 100%;
+    gap: 1rem;
+    border-radius: 2.4rem;
+
+    .grid__item {
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+        border-radius: 2rem;
+        overflow: hidden;
+
+        .item__image {
+            max-width: 30rem;
+        }
+
+        .grid__title {
+            font-family: 'Mulish-Bold';
+            font-size: 1.6rem;
+            padding: 2.2rem 2.2rem 2.5rem 2.5rem;
+        }
+
+        .grid__summary {
+            font-family: 'Mulish-Light';
+            font-size: 1.4rem;
+            padding-left: 2.5rem;
+            padding-bottom: 2.5rem;
+        }
+
+        .grid__cta {
+            font-family: 'Mulish-Regular';
+            font-size: 1.5rem;
+            padding-left: 2.5rem;
+            padding-bottom: 2.5rem;
+        }
+    }
+}
