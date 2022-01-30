@@ -1,7 +1,37 @@
+html {
+  font-family: "Mulish-Regular";
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+}
+
+html {
+  font-family: "Mulish-Regular";
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 ul {
@@ -13,16 +43,8 @@ img {
 }
 
 @font-face {
-  font-family: "Mulish-Regular";
-  src: url("./../fonts/Mulish-Regular.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Mulish-Light";
-  src: url("./../fonts/Mulish-Light.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Mulish-Bold";
-  src: url("./../fonts/Mulish-Bold.ttf") format("truetype");
+  font-family: "Mulish";
+  src: url("./../fonts/Mulish.ttf") format("truetype");
 }
 .text-7xl {
   font-size: 3.8rem;
@@ -121,37 +143,18 @@ img {
 
 .bold {
   font-weight: bold;
-}
-
-.header {
-  padding: 2rem;
-}
-.header__nav :not(.header__logo) {
-  display: none;
-}
-.header__heading {
-  padding: 7.6rem 0 2.5rem;
-}
-.header__content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.header__btn {
-  margin: 4rem 0;
-}
-
-html {
   font-family: "Mulish-Regular";
-  font-size: 62.5%;
+  src: url("./../fonts/Mulish-Regular.ttf") format("truetype");
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+@font-face {
+  font-family: "Mulish-Light";
+  src: url("./../fonts/Mulish-Light.ttf") format("truetype");
 }
-
+@font-face {
+  font-family: "Mulish-Bold";
+  src: url("./../fonts/Mulish-Bold.ttf") format("truetype");
+}
 .button {
   font-family: "Mulish-Bold";
   width: 20rem;
@@ -197,6 +200,24 @@ body {
   font-size: 1.5rem;
   padding-left: 2.5rem;
   padding-bottom: 2.5rem;
+}
+
+.header {
+  padding: 2rem;
+}
+.header__nav :not(.header__logo) {
+  display: none;
+}
+.header__heading {
+  padding: 7.6rem 0 2.5rem;
+}
+.header__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.header__btn {
+  margin: 4rem 0;
 }
 
 .slider__container {
