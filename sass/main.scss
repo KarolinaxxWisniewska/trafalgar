@@ -1,4 +1,5 @@
 @import 'base/variables';
+@import 'base/common';
 @import 'utils/mixins';
 @import 'base/reset';
 @import 'base/common';
@@ -6,7 +7,9 @@
 @import 'utils/utils';
 @import 'components/components';
 @import 'components/buttons';
+@import 'components/grids';
 @import 'sections/header';
 @import 'sections/main';
 @import 'sections/sections';
+@import 'sections/articles_section';
 @import 'sections/footer';
