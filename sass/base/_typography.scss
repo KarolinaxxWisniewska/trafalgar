@@ -2,3 +2,64 @@
     font-family: "Mulish";
     src: url("./../fonts/Mulish.ttf") format("truetype"),
 }
+
+.text-7xl {
+    @include text(3.8rem, 5.6rem);
+}
+
+.text-6xl {
+    @include text(3.6rem, 5.6rem, 700);
+}
+
+.text-5xl {
+    @include text(3.6rem, 4.8rem, 700)
+}
+
+.text-4xl {
+    @include text(2.4rem, 5.6rem, 700);
+}
+
+.text-3xl {
+    @include text(2.1rem, 3.2rem, 700);
+}
+
+.text-2xl {
+    @include text(2.1rem, 3.2rem, 300, $color-grey-200);
+}
+
+.text-xl {
+    @include text(2rem, 6rem, 700)
+}
+
+.text-xs {
+    @include text(1.9rem, 3rem, 400)
+}
+
+.text-2xs {
+    @include text(1.8rem, 3rem, 300);
+}
+
+.text-3xs {
+    @include text(1.8rem, 2.8rem, 300)
+}
+
+.text-4xs {
+    @include text(1.8rem, 2.2rem, 400)
+}
+
+.text-5xs {
+    @include text(1.7rem, 2.8rem, 600)
+}
+
+.text-6xs {
+    @include text(1.6rem, 2.8rem, 300)
+}
+
+.text-white {
+    color: white;
+}
+
+
+.bold {
+    font-weight: bold;
+}

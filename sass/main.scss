@@ -1,7 +1,8 @@
-@import 'base/reset';
-@import 'base/typography';
 @import 'base/variables';
 @import 'utils/mixins';
+@import 'base/reset';
+@import 'base/common';
+@import 'base/typography';
 @import 'utils/utils';
 @import 'components/components';
 @import 'components/buttons';
