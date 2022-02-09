@@ -24,3 +24,11 @@ $color-primary: $color-blue-200;
 $color-primary-darker: $color-blue-300;
 
 $button-color: $color-primary;
+
+$grid-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+
+$gradient: linear-gradient(185deg, #67C3F3 -50% -20%, $color-blue-150 50% 70%);
+
+$font-primary: 'Mulish',
+sans-serif;

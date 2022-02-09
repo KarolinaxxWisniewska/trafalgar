@@ -1,6 +1,25 @@
 @font-face {
+    font-weight: 400;
     font-family: "Mulish";
-    src: url("./../fonts/Mulish.ttf") format("truetype"),
+    src: url("./../fonts/Mulish-Regular.ttf") format("truetype"),
+}
+
+@font-face {
+    font-family: "Mulish";
+    font-weight: 300;
+    src: url("./../fonts/Mulish-Light.ttf") format("truetype"),
+}
+
+@font-face {
+    font-family: "Mulish";
+    font-weight: 700;
+    src: url("./../fonts/Mulish-Bold.ttf") format("truetype"),
+}
+
+@font-face {
+    font-family: "Mulish";
+    font-weight: 800;
+    src: url("./../fonts/Mulish-ExtraBold.ttf") format("truetype"),
 }
 
 .text-7xl {
@@ -12,31 +31,31 @@
 }
 
 .text-5xl {
-    @include text(3.6rem, 4.8rem, 700);
+    @include text(2.2rem, 4.8rem, 700);
 }
 
 .text-4xl {
-    @include text(2.4rem, 5.6rem, 700);
+    @include text(1.6rem, 5.6rem, 700);
 }
 
 .text-3xl {
-    @include text(2.1rem, 3.2rem, 700);
+    @include text(1.6rem, 2rem, 700);
 }
 
 .text-2xl {
-    @include text(2.1rem, 3.2rem, 300, $color-grey-200);
+    @include text(1.7rem, 3.2rem, 300, $color-grey-200);
 }
 
 .text-xl {
-    @include text(2rem, 6rem, 700)
+    @include text(2rem, 3rem, 700)
 }
 
 .text-xs {
-    @include text(1.9rem, 3rem, 400)
+    @include text(1.3rem, 2rem, 400)
 }
 
 .text-2xs {
-    @include text(1.8rem, 3rem, 300);
+    @include text(1.3rem, 3rem, 300);
 }
 
 .text-3xs {
@@ -44,7 +63,7 @@
 }
 
 .text-4xs {
-    @include text(1.8rem, 2.2rem, 400)
+    @include text(1.6rem, 2rem, 900)
 }
 
 .text-5xs {
@@ -59,19 +78,49 @@
     color: white;
 }
 
-
 .bold {
-    font-weight: bold;
-    font-family: "Mulish-Regular";
-    src: url("./../fonts/Mulish-Regular.ttf") format("truetype"),
+    font-weight: 700;
 }
 
-@font-face {
-    font-family: "Mulish-Light";
-    src: url("./../fonts/Mulish-Light.ttf") format("truetype"),
+
+@media (min-width: 640px) {
+    .text-2xl {
+        font-size: 2.1rem;
+    }
+
+    .text-xl {
+        line-height: 6rem;
+    }
+
+    .text-2xs {
+        font-size: 1.8rem;
+    }
+
+    .text-5xl {
+        font-size: 2.8rem;
+    }
+
+    .text-4xs {
+        font-size: 2rem;
+        line-height: 2.2rem;
+        font-weight: 700;
+    }
+
+    .text-xs {
+        font-size: 1.6rem;
+    }
+
+    .text-3xl {
+        @include text(1.8rem, 2.2rem, 700);
+    }
 }
 
-@font-face {
-    font-family: "Mulish-Bold";
-    src: url("./../fonts/Mulish-Bold.ttf") format("truetype"),
+@media (min-width: 960px) {
+    .text-3xl {
+        @include text(2.1rem, 3.2rem, 700);
+    }
+
+    .text-5xl {
+        font-size: 3.6rem;
+    }
 }

@@ -1,38 +1,54 @@
 .grid__articles {
     display: grid;
+    align-items: center;
     grid-template-columns: auto;
-    padding: 1rem;
-    max-width: 100%;
-    gap: 1rem;
+    padding: 8rem 1rem 7.2rem 1rem;
+    max-width: 32rem;
+    gap: 3rem;
     border-radius: 2.4rem;
 
     .grid__item {
-        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+        box-shadow: $grid-shadow;
         border-radius: 2rem;
         overflow: hidden;
-
-        .item__image {
-            max-width: 30rem;
-        }
+        background-color: $color-white-100;
+        max-width: 35rem;
 
         .grid__title {
-            font-family: 'Mulish-Bold';
-            font-size: 1.6rem;
             padding: 2.2rem 2.2rem 2.5rem 2.5rem;
         }
 
         .grid__summary {
-            font-family: 'Mulish-Light';
-            font-size: 1.4rem;
             padding-left: 2.5rem;
             padding-bottom: 2.5rem;
+            padding-right: 2.5rem;
+            color: $color-grey-200;
         }
 
         .grid__cta {
-            font-family: 'Mulish-Regular';
-            font-size: 1.5rem;
             padding-left: 2.5rem;
             padding-bottom: 2.5rem;
+            color: $color-blue-300;
+
+            .arrow {
+                width: 1.5rem;
+                height: .9rem;
+                margin-left: .7rem;
+            }
         }
+    }
+}
+
+@media (min-width: 640px) {
+    .grid__articles {
+        grid-template-columns: auto auto;
+        max-width: 64rem;
+    }
+}
+
+@media (min-width: 960px) {
+    .grid__articles {
+        grid-template-columns: auto auto auto;
+        max-width: 112rem;
     }
 }

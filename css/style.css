@@ -1,12 +1,17 @@
 html {
-  font-family: "Mulish-Regular";
   font-size: 62.5%;
 }
 
 body {
+  color: #000;
+  font-family: "Mulish", sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+main {
+  width: 100%;
 }
 
 ul {
@@ -24,14 +29,19 @@ img {
 }
 
 html {
-  font-family: "Mulish-Regular";
   font-size: 62.5%;
 }
 
 body {
+  color: #000;
+  font-family: "Mulish", sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+main {
+  width: 100%;
 }
 
 ul {
@@ -43,46 +53,57 @@ img {
 }
 
 @font-face {
+  font-weight: 400;
   font-family: "Mulish";
-  src: url("./../fonts/Mulish.ttf") format("truetype");
+  src: url("./../fonts/Mulish-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Mulish";
+  font-weight: 300;
+  src: url("./../fonts/Mulish-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Mulish";
+  font-weight: 700;
+  src: url("./../fonts/Mulish-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Mulish";
+  font-weight: 800;
+  src: url("./../fonts/Mulish-ExtraBold.ttf") format("truetype");
 }
 .text-7xl {
   font-size: 3.8rem;
   line-height: 5.6rem;
   font-weight: normal;
-  color: #000;
 }
 
 .text-6xl {
   font-size: 3.6rem;
   line-height: 5.6rem;
   font-weight: 700;
-  color: #000;
 }
 
 .text-5xl {
-  font-size: 3.6rem;
+  font-size: 2.2rem;
   line-height: 4.8rem;
   font-weight: 700;
-  color: #000;
 }
 
 .text-4xl {
-  font-size: 2.4rem;
+  font-size: 1.6rem;
   line-height: 5.6rem;
   font-weight: 700;
-  color: #000;
 }
 
 .text-3xl {
-  font-size: 2.1rem;
-  line-height: 3.2rem;
+  font-size: 1.6rem;
+  line-height: 2rem;
   font-weight: 700;
-  color: #000;
 }
 
 .text-2xl {
-  font-size: 2.1rem;
+  font-size: 1.7rem;
   line-height: 3.2rem;
   font-weight: 300;
   color: #7D7987;
@@ -90,51 +111,44 @@ img {
 
 .text-xl {
   font-size: 2rem;
-  line-height: 6rem;
+  line-height: 3rem;
   font-weight: 700;
-  color: #000;
 }
 
 .text-xs {
-  font-size: 1.9rem;
-  line-height: 3rem;
+  font-size: 1.3rem;
+  line-height: 2rem;
   font-weight: 400;
-  color: #000;
 }
 
 .text-2xs {
-  font-size: 1.8rem;
+  font-size: 1.3rem;
   line-height: 3rem;
   font-weight: 300;
-  color: #000;
 }
 
 .text-3xs {
   font-size: 1.8rem;
   line-height: 2.8rem;
   font-weight: 300;
-  color: #000;
 }
 
 .text-4xs {
-  font-size: 1.8rem;
-  line-height: 2.2rem;
-  font-weight: 400;
-  color: #000;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  font-weight: 900;
 }
 
 .text-5xs {
   font-size: 1.7rem;
   line-height: 2.8rem;
   font-weight: 600;
-  color: #000;
 }
 
 .text-6xs {
   font-size: 1.6rem;
   line-height: 2.8rem;
   font-weight: 300;
-  color: #000;
 }
 
 .text-white {
@@ -142,21 +156,56 @@ img {
 }
 
 .bold {
-  font-weight: bold;
-  font-family: "Mulish-Regular";
-  src: url("./../fonts/Mulish-Regular.ttf") format("truetype");
+  font-weight: 700;
 }
 
-@font-face {
-  font-family: "Mulish-Light";
-  src: url("./../fonts/Mulish-Light.ttf") format("truetype");
+@media (min-width: 640px) {
+  .text-2xl {
+    font-size: 2.1rem;
+  }
+
+  .text-xl {
+    line-height: 6rem;
+  }
+
+  .text-2xs {
+    font-size: 1.8rem;
+  }
+
+  .text-5xl {
+    font-size: 2.8rem;
+  }
+
+  .text-4xs {
+    font-size: 2rem;
+    line-height: 2.2rem;
+    font-weight: 700;
+  }
+
+  .text-xs {
+    font-size: 1.6rem;
+  }
+
+  .text-3xl {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    font-weight: 700;
+  }
 }
-@font-face {
-  font-family: "Mulish-Bold";
-  src: url("./../fonts/Mulish-Bold.ttf") format("truetype");
+@media (min-width: 960px) {
+  .text-3xl {
+    font-size: 2.1rem;
+    line-height: 3.2rem;
+    font-weight: 700;
+  }
+
+  .text-5xl {
+    font-size: 3.6rem;
+  }
 }
 .button {
-  font-family: "Mulish-Bold";
+  font-family: "Mulish";
+  font-weight: 700;
   width: 20rem;
   height: 5.6rem;
   border: 0.1rem solid;
@@ -168,40 +217,65 @@ img {
   color: #fff;
 }
 
+.btn-blue {
+  background-color: #458FF6;
+  color: #fff;
+}
+
+.btn-white {
+  background-color: #fff;
+  border-color: #458FF6;
+  color: #458FF6;
+}
+
 .grid__articles {
   display: grid;
+  align-items: center;
   grid-template-columns: auto;
-  padding: 1rem;
-  max-width: 100%;
-  gap: 1rem;
+  padding: 8rem 1rem 7.2rem 1rem;
+  max-width: 32rem;
+  gap: 3rem;
   border-radius: 2.4rem;
 }
 .grid__articles .grid__item {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
   border-radius: 2rem;
   overflow: hidden;
-}
-.grid__articles .grid__item .item__image {
-  max-width: 30rem;
+  background-color: #fff;
+  max-width: 35rem;
 }
 .grid__articles .grid__item .grid__title {
-  font-family: "Mulish-Bold";
-  font-size: 1.6rem;
   padding: 2.2rem 2.2rem 2.5rem 2.5rem;
 }
 .grid__articles .grid__item .grid__summary {
-  font-family: "Mulish-Light";
-  font-size: 1.4rem;
   padding-left: 2.5rem;
   padding-bottom: 2.5rem;
+  padding-right: 2.5rem;
+  color: #7D7987;
 }
 .grid__articles .grid__item .grid__cta {
-  font-family: "Mulish-Regular";
-  font-size: 1.5rem;
   padding-left: 2.5rem;
   padding-bottom: 2.5rem;
+  color: #4089ED;
+}
+.grid__articles .grid__item .grid__cta .arrow {
+  width: 1.5rem;
+  height: 0.9rem;
+  margin-left: 0.7rem;
 }
 
+@media (min-width: 640px) {
+  .grid__articles {
+    grid-template-columns: auto auto;
+    max-width: 64rem;
+  }
+}
+@media (min-width: 960px) {
+  .grid__articles {
+    grid-template-columns: auto auto auto;
+    max-width: 112rem;
+  }
+}
 .header {
   padding: 2rem;
 }
@@ -220,9 +294,9 @@ img {
   margin: 4rem 0;
 }
 
-.slider__container {
+.opinion {
   color: #fff;
-  background-color: #5A98F2;
+  background: linear-gradient(185deg, #67C3F3 -50% -20%, #5A98F2 50% 70%);
   border-radius: 2.4rem;
   display: flex;
   flex-direction: column;
@@ -230,38 +304,48 @@ img {
   text-align: center;
   margin: 1rem;
 }
-.slider__container .slider__title {
-  padding: 2rem 1rem;
-  font-size: 3rem;
+.opinion .hr {
+  width: 10%;
+  align-self: center;
 }
-.slider__container .slider__text {
+.opinion__title {
+  padding: 2rem 1rem;
+  color: #fff;
+}
+.opinion .comment__name {
+  font-size: 2rem;
+  line-height: 2rem;
+  padding: 2rem 1rem;
+}
+.opinion .comment__profession {
+  font-size: 1.3rem;
+  line-height: 2rem;
+  padding: 0rem 3rem;
+}
+.opinion .comment__text {
   padding: 2rem 1rem;
   font-style: normal;
   font-weight: normal;
   font-size: 1.3rem;
   line-height: 2rem;
 }
-.slider__container .slider__name {
-  font-size: 2rem;
-  line-height: 2rem;
-  padding: 2rem 1rem;
-}
-.slider__container .slider__profession {
-  font-size: 1.3rem;
-  line-height: 2rem;
-  padding: 1rem 3rem;
-}
 
 .slider {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   text-align: center;
+  padding: 2rem 0;
 }
 .slider .arrow {
   width: 3rem;
   height: 2rem;
   margin: 0 2rem;
+  fill: #58D6F4;
+}
+.slider .arrow:hover {
+  fill: #5B9BF3;
 }
 .slider .dot {
   display: flex;
@@ -270,12 +354,44 @@ img {
   text-align: center;
   height: 10px;
   width: 10px;
-  background-color: #5B9BF3;
+  background-color: #58D6F4;
   border-radius: 50%;
   display: inline-block;
   margin: 0.9rem;
 }
+.slider .active {
+  background-color: #5B9BF3;
+}
 
+@media (min-width: 640px) {
+  .opinion {
+    text-align: left;
+  }
+  .opinion .comment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .opinion .comment .slider__name {
+    padding: 1rem;
+  }
+  .opinion .comment .slider__profession {
+    padding: 0;
+  }
+  .opinion .comment .person__photo {
+    margin: 2rem;
+    width: 10rem;
+    height: 10rem;
+  }
+  .opinion .comment .person__data {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .opinion .comment .slider__text {
+    padding: 0 3rem;
+  }
+}
 .header__ .header__image {
   padding: 1rem;
   max-height: 100%;
@@ -283,19 +399,70 @@ img {
 }
 
 .articles {
-  max-width: 32rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+}
+.articles::before {
+  content: "";
+  background-image: url(./../images/checkout_backgroundMark.svg);
+  width: 478px;
+  height: 516px;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+}
+.articles .title__text {
+  padding-bottom: 2.6rem;
 }
 .articles .slider__title {
   font-size: 2rem;
-  font-family: "Mulish-Bold";
   padding-bottom: 1rem;
 }
-.articles hr {
+.articles .title__hr {
   width: 10%;
   align-self: center;
+  margin-bottom: 1rem;
+}
+.articles .button {
+  margin: 0rem 0 7rem 0;
+}
+
+@media (min-width: 640px) {
+  .button {
+    margin: 0rem 0 13rem 0;
+  }
+}
+@media (min-width: 960px) {
+  .button {
+    margin: 0rem 0 20rem 0;
+  }
+}
+.footer {
+  background: linear-gradient(185deg, #67C3F3 -50% -20%, #5A98F2 50% 70%);
+  padding: 1rem;
+  width: 100%;
+}
+.footer .footer__wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  text-align: center;
+}
+.footer .footer__info {
+  padding: 1rem;
+  grid-row: 4/5;
+  text-align: left;
+}
+.footer .footer__info .description {
+  line-height: 2rem;
+}
+.footer .footer__info .rights {
+  padding-top: 1rem;
+}
+.footer .footer__menu__description {
+  padding: 1rem 0;
 }
 
 /*# sourceMappingURL=style.css.map */

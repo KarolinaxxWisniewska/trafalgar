@@ -1,0 +1,47 @@
+.articles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    &::before {
+        content: '';
+        background-image: url(./../images/checkout_backgroundMark.svg);
+        width: 478px;
+        height: 516px;
+        position: absolute;
+        right: 0;
+        z-index: -1;
+    }
+
+    .title__text {
+        padding-bottom: 2.6rem;
+    }
+
+    .slider__title {
+        font-size: 2rem;
+        padding-bottom: 1rem;
+    }
+
+    .title__hr {
+        width: 10%;
+        align-self: center;
+        margin-bottom: 1rem;
+    }
+
+    .button {
+        margin: 0rem 0 7rem 0;
+    }
+}
+
+@media (min-width: 640px) {
+    .button {
+        margin: 0rem 0 13rem 0;
+    }
+}
+
+@media (min-width: 960px) {
+    .button {
+        margin: 0rem 0 20rem 0;
+    }
+}

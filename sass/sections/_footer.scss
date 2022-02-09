@@ -1,0 +1,32 @@
+.footer {
+    background: $gradient;
+    padding: 1rem;
+    width: 100%;
+
+    .footer__wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .footer__info {
+        padding: 1rem;
+        grid-row: 4 / 5;
+        text-align: left;
+
+        .description {
+            line-height: 2rem;
+        }
+
+        .rights {
+            padding-top: 1rem;
+        }
+    }
+
+    .footer__menu {
+        &__description {
+            padding: 1rem 0;
+        }
+    }
+}
