@@ -1,18 +1,23 @@
-.opinion {
-    color: $color-white-100;
-    background: $gradient;
-    border-radius: 2.4rem;
+.main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
+}
+
+.opinion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 1rem;
-
-
+    border-radius: 2.4rem;
+    background: $gradient;
+    color: $color-white-100;
+    text-align: center;
 
     .hr {
         width: 10%;
         align-self: center;
+        margin-bottom: 2rem;
     }
 
     &__title {
@@ -20,26 +25,26 @@
         color: $color-white-100;
     }
 
-    .comment__name {
-        font-size: 2rem;
-        line-height: 2rem;
-        padding: 2rem 1rem;
-    }
+    .comment {
+        &__name {
+            font-size: 2rem;
+            line-height: 2rem;
+            padding: 1rem;
+        }
 
-    .comment__profession {
-        font-size: 1.3rem;
-        line-height: 2rem;
-        padding: 0rem 3rem;
-    }
+        &__profession {
+            font-size: 1.3rem;
+            line-height: 2rem;
+        }
 
-    .comment__text {
-        padding: 2rem 1rem;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 1.3rem;
-        line-height: 2rem;
+        &__text {
+            padding: 2rem 1rem;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 1.3rem;
+            line-height: 2rem;
+        }
     }
-
 }
 
 .slider {
@@ -56,10 +61,10 @@
         height: 2rem;
         margin: 0 2rem;
         fill: $color-blue-400;
-    }
 
-    .arrow:hover {
-        fill: $color-blue-100;
+        &:hover:not(.disabled) {
+            fill: $color-blue-100;
+        }
     }
 
     .dot {
@@ -73,16 +78,22 @@
         border-radius: 50%;
         display: inline-block;
         margin: 0.9rem;
-    }
 
-    .active {
-        background-color: $color-blue-100;
+        // TODO popraw aby zrobione było  z użyciem opacity
+        &.active {
+            opacity: 1;
+            // background-color: $color-blue-100;
+        }
     }
 }
 
 @media (min-width: 640px) {
     .opinion {
         text-align: left;
+
+        .hr {
+            margin-bottom: 0;
+        }
 
         .comment {
             display: flex;
@@ -98,9 +109,8 @@
             }
 
             .person__photo {
-                margin: 2rem;
-                width: 10rem;
-                height: 10rem;
+                margin: 1rem 2rem;
+
             }
 
             .person__data {
@@ -112,6 +122,42 @@
             .slider__text {
                 padding: 0 3rem;
             }
+        }
+    }
+}
+
+@media (min-width: 960px) {
+    .opinion {
+        justify-content: center;
+
+        .comment {
+            padding-bottom: 5rem;
+
+            .person__photo {
+                width: 14.1rem;
+                height: 14.1rem;
+            }
+
+            &__text {
+                max-width: 42rem;
+                font-size: 1.9rem;
+                line-height: 3rem;
+                font-weight: 300;
+            }
+        }
+    }
+
+}
+
+@media (min-width: 1160px) {
+    .opinion {
+        width: 116rem;
+
+        .comment {
+            .person__data {
+                margin-right: 7rem;
+            }
+
         }
     }
 }
