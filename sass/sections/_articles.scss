@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 
     &::before {
         content: '';
@@ -23,7 +24,7 @@
     }
 
     .title__hr {
-        asdfawsedf sdsd width: 10%;
+        width: 10%;
         align-self: center;
         margin-bottom: 1rem;
         color: $color-white-200;
