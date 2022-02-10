@@ -90,6 +90,12 @@ img {
   font-weight: 700;
 }
 
+.text-5xl2 {
+  font-size: 2.2rem;
+  line-height: 4.8rem;
+  font-weight: 700;
+}
+
 .text-4xl {
   font-size: 1.6rem;
   line-height: 5.6rem;
@@ -194,6 +200,10 @@ img {
     font-size: 2.8rem;
   }
 
+  .text-5xl2 {
+    font-size: 2.2rem;
+  }
+
   .text-3xs {
     font-size: 1.8rem;
     line-height: 4rem;
@@ -203,6 +213,10 @@ img {
     font-size: 2rem;
     line-height: 2.2rem;
     font-weight: 700;
+  }
+
+  .text-4xs2 {
+    font-size: 2.2rem;
   }
 
   .text-xs {
@@ -341,12 +355,12 @@ img {
   align-items: center;
   margin: 1rem;
   border-radius: 2.4rem;
-  background: linear-gradient(185deg, #67C3F3 -50% -20%, #5A98F2 50% 70%);
+  background: linear-gradient(180deg, #67C3F3 -50% 0%, #5A98F2 50% 70%);
   color: #fff;
   text-align: center;
 }
 .opinion .hr {
-  width: 10%;
+  width: 5%;
   align-self: center;
   margin-bottom: 2rem;
 }
@@ -366,8 +380,8 @@ img {
 .opinion .comment__text {
   padding: 2rem 1rem;
   font-style: normal;
-  font-weight: normal;
-  font-size: 1.3rem;
+  font-weight: 300;
+  font-size: 1.6rem;
   line-height: 2rem;
 }
 
@@ -395,10 +409,11 @@ img {
   text-align: center;
   height: 10px;
   width: 10px;
-  background-color: #58D6F4;
+  background-color: #5B9BF3;
   border-radius: 50%;
   display: inline-block;
   margin: 0.9rem;
+  opacity: 0.3;
 }
 .slider .dot.active {
   opacity: 1;
@@ -415,6 +430,11 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .opinion .comment__text {
+    max-width: 42rem;
+    line-height: 3rem;
+    font-weight: 300;
   }
   .opinion .comment .slider__name {
     padding: 1rem;
@@ -438,14 +458,27 @@ img {
   .opinion {
     justify-content: center;
   }
+  .opinion .hr {
+    margin-bottom: 5rem;
+  }
   .opinion .comment {
     padding-bottom: 5rem;
   }
-  .opinion .comment .person__photo {
+  .opinion .comment .person__data {
+    text-align: left;
+  }
+  .opinion .comment .person__data .comment__profession {
+    max-width: 42rem;
+    font-size: 1.9rem;
+    line-height: 3rem;
+    font-weight: 300;
+    padding-left: 1rem;
+  }
+  .opinion .comment .person__data__photo {
     width: 14.1rem;
     height: 14.1rem;
   }
-  .opinion .comment__text {
+  .opinion .comment__text .opinion .comment__proffesion {
     max-width: 42rem;
     font-size: 1.9rem;
     line-height: 3rem;
@@ -454,10 +487,21 @@ img {
 }
 @media (min-width: 1160px) {
   .opinion {
-    width: 116rem;
+    width: 112rem;
+  }
+  .opinion__title {
+    padding-top: 0;
+    margin-top: 6.4rem;
+  }
+  .opinion .comment {
+    padding-bottom: 6rem;
   }
   .opinion .comment .person__data {
     margin-right: 7rem;
+  }
+
+  .slider {
+    padding-bottom: 21rem;
   }
 }
 .header__ .header__image {
@@ -507,7 +551,7 @@ img {
   }
 }
 .footer {
-  background: linear-gradient(185deg, #67C3F3 -50% -20%, #5A98F2 50% 70%);
+  background: linear-gradient(180deg, #67C3F3 -50% 0%, #5A98F2 50% 70%);
   padding: 2rem;
   width: 100%;
 }

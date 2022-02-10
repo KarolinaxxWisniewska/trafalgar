@@ -34,6 +34,10 @@
     @include text(2.2rem, 4.8rem, 700);
 }
 
+.text-5xl2 {
+    @include text(2.2rem, 4.8rem, 700);
+}
+
 .text-4xl {
     @include text(1.6rem, 5.6rem, 700);
 }
@@ -112,6 +116,10 @@
         font-size: 2.8rem;
     }
 
+    .text-5xl2 {
+        font-size: 2.2rem;
+    }
+
     .text-3xs {
         font-size: 1.8rem;
         line-height: 4rem;
@@ -121,6 +129,10 @@
         font-size: 2rem;
         line-height: 2.2rem;
         font-weight: 700;
+    }
+
+    .text-4xs2 {
+        font-size: 2.2rem;
     }
 
     .text-xs {

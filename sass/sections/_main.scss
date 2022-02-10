@@ -15,7 +15,7 @@
     text-align: center;
 
     .hr {
-        width: 10%;
+        width: 5%;
         align-self: center;
         margin-bottom: 2rem;
     }
@@ -40,8 +40,8 @@
         &__text {
             padding: 2rem 1rem;
             font-style: normal;
-            font-weight: normal;
-            font-size: 1.3rem;
+            font-weight: 300;
+            font-size: 1.6rem;
             line-height: 2rem;
         }
     }
@@ -74,15 +74,14 @@
         text-align: center;
         height: 10px;
         width: 10px;
-        background-color: $color-blue-400;
+        background-color: $color-blue-100;
         border-radius: 50%;
         display: inline-block;
         margin: 0.9rem;
+        opacity: 0.3;
 
-        // TODO popraw aby zrobione było  z użyciem opacity
         &.active {
             opacity: 1;
-            // background-color: $color-blue-100;
         }
     }
 }
@@ -99,6 +98,12 @@
             display: flex;
             justify-content: center;
             align-items: center;
+
+            &__text {
+                max-width: 42rem;
+                line-height: 3rem;
+                font-weight: 300;
+            }
 
             .slider__name {
                 padding: 1rem;
@@ -130,20 +135,42 @@
     .opinion {
         justify-content: center;
 
+        .hr {
+            margin-bottom: 5rem;
+        }
+
         .comment {
             padding-bottom: 5rem;
 
-            .person__photo {
-                width: 14.1rem;
-                height: 14.1rem;
+            .person__data {
+
+                text-align: left;
+
+
+                .comment__profession {
+                    max-width: 42rem;
+                    font-size: 1.9rem;
+                    line-height: 3rem;
+                    font-weight: 300;
+                    padding-left: 1rem;
+                }
+
+                &__photo {
+                    width: 14.1rem;
+                    height: 14.1rem;
+                }
             }
 
-            &__text {
+
+            &__text &__proffesion {
                 max-width: 42rem;
                 font-size: 1.9rem;
                 line-height: 3rem;
                 font-weight: 300;
             }
+
+
+
         }
     }
 
@@ -151,13 +178,24 @@
 
 @media (min-width: 1160px) {
     .opinion {
-        width: 116rem;
+        width: 112rem;
+
+        &__title {
+            padding-top: 0;
+            margin-top: 6.4rem;
+        }
 
         .comment {
+            padding-bottom: 6rem;
+
             .person__data {
                 margin-right: 7rem;
             }
 
         }
+    }
+
+    .slider {
+        padding-bottom: 21rem;
     }
 }
