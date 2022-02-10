@@ -1,10 +1,24 @@
+
 @font-face {
     font-family: "Mulish";
-    src: url("./../fonts/Mulish.ttf") format("truetype"),
+    font-weight: 400;
+    src: url("./../fonts/Mulish-Regular.ttf") format("truetype"),
+}
+
+@font-face {
+    font-family: "Mulish";
+    font-weight: 300;
+    src: url("./../fonts/Mulish-Light.ttf") format("truetype"),
+}
+
+@font-face {
+    font-family: "Mulish";
+    font-weight: 700;
+    src: url("./../fonts/Mulish-Bold.ttf") format("truetype"),
 }
 
 .text-7xl {
-    @include text(3.8rem, 5.6rem);
+    @include text(3.8rem, 5.6rem, 700);
 }
 
 .text-6xl {
@@ -36,7 +50,7 @@
 }
 
 .text-2xs {
-    @include text(1.8rem, 3rem, 300);
+    @include text(1.8rem, 3rem, 300, $color-grey-200);
 }
 
 .text-3xs {
@@ -52,26 +66,13 @@
 }
 
 .text-6xs {
-    @include text(1.6rem, 2.8rem, 300)
+    @include text(1.6rem, 2.8rem, 300, $color-grey-200)
 }
 
 .text-white {
     color: white;
 }
 
-
 .bold {
-    font-weight: bold;
-    font-family: "Mulish-Regular";
-    src: url("./../fonts/Mulish-Regular.ttf") format("truetype"),
-}
-
-@font-face {
-    font-family: "Mulish-Light";
-    src: url("./../fonts/Mulish-Light.ttf") format("truetype"),
-}
-
-@font-face {
-    font-family: "Mulish-Bold";
-    src: url("./../fonts/Mulish-Bold.ttf") format("truetype"),
+    font-weight: 700;
 }
