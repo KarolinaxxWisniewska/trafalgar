@@ -68,7 +68,6 @@
     text-align: center;
     padding: 2rem 0;
 
-
     .arrow {
         width: 3rem;
         height: 2rem;
@@ -149,6 +148,7 @@
 @media (min-width: 960px) {
     .opinion {
         justify-content: center;
+        margin: 10rem 1rem;
 
         .hr {
             margin-bottom: 5rem;
@@ -176,24 +176,20 @@
                 }
             }
 
-
             &__text &__proffesion {
                 max-width: 42rem;
                 font-size: 1.9rem;
                 line-height: 3rem;
                 font-weight: 300;
             }
-
-
-
         }
     }
-
 }
 
 @media (min-width: 1160px) {
     .opinion {
         width: 112rem;
+        margin: 15rem 1rem;
 
         &__title {
             padding-top: 0;
@@ -206,7 +202,6 @@
             .person__data {
                 margin-right: 7rem;
             }
-
         }
     }
 
