@@ -10,66 +10,87 @@
 </head>
 
 <body>
-  <header class="header">
+  <header class="header dots">
     <nav class="header__nav">
       <img src="./images/logo.png" alt="logo" class="header__logo" />
+      <svg class="header__icon"><use xlink:href="./images/symbol-defs.svg#icon-menu"></use></svg>
       <ul class="header__list-container">
-        <li class="header__list-item">Home</li>
-        <li class="header__list-item">Find a Doctor</li>
-        <li class="header__list-item">Apps</li>
-        <li class="header__list-item">Testimonials</li>
-        <li class="header__list-item">About Us</li>
+        <li class="header__list-item text-4xs bold">Home</li>
+        <li class="header__list-item text-4xs">Find a Doctor</li>
+        <li class="header__list-item text-4xs">Apps</li>
+        <li class="header__list-item text-4xs">Testimonials</li>
+        <li class="header__list-item text-4xs">About Us</li>
       </ul>
     </nav>
     <section class="header__content">
-      <h1 class="header__heading text-7xl bold">Virtual healthcare for you</h1>
-      <p class="header__subheading text-2xl">Trafalgar provides progressive, and affordable healthcare, accessible on
-        mobile and
-        online for everyone</p>
-      <button class="header__btn btn button">Consult today</button>
-      <img src="./images/Illustration Head.png" alt="" class="header__image">
+      <div class="header__content-column">
+        <h1 class="header__heading text-7xl bold">Virtual healthcare for you</h1>
+        <p class="header__subheading text-2xl">Trafalgar provides progressive, and affordable healthcare, accessible on mobile and
+          online for everyone</p>
+        <button class="header__btn button">Consult today</button>
+      </div>
+      <img src="./images/Illustration Head.png" alt="People making appointment" class="header__image">
     </section>
   </header>
   <main class="main">
-    <section class="main__services">
-      <h2 class="main__heading text-6xl">Our services</h2>
-      <br class="main__line">
-      <p class="main__subheading">We provide to you the best choiches for you. Adjust it to your health needs and make
-        sure your undergo treatment with our highly qualified doctors you can consult with us which type of service is
-        suitable for your health</p>
-      <div class="main__card-list">
-        <div class="main__card-wrapper">
-          <img src="./images/search.png" alt="search loupe">
-          <p class="main__card-heading"></p>
-          <p class="main__card-subheading"></p>
+    <section class="main__services services">
+        <h2 class="services__heading text-6xl">Our services</h2>
+        <hr class="services__line line hr">
+        <p class="services__subheading text-2xs">We provide to you the best choiches for you. Adjust it to your health needs and make sure your undergo treatment with our highly qualified doctors you can consult with us which type of service is suitable for your health</p>
+        <div class="services__cards cards">
+            <div class="cards__card-wrapper">
+                <img src="./images/search.png" alt="search loupe">
+                <p class="cards__card-heading text-4xl">Search doctor</p>
+                <p class="cards__card-subheading text-6xs">Choose your doctor from thousands of specialist, general, and trusted hospitals</p>
+            </div>
+            <div class="cards__card-wrapper">
+                <img src="./images/pharmacy.png" alt="pharmacy icon">
+                <p class="cards__card-heading text-4xl">Online pharmacy</p>
+                <p class="cards__card-subheading text-6xs">Buy  your medicines with our mobile application with a simple delivery system</p>
+            </div>
+            <div class="cards__card-wrapper">
+                <img src="./images/Consultation.png" alt="consultation board icon">
+                <p class="cards__card-heading text-4xl">Consultation</p>
+                <p class="cards__card-subheading text-6xs">Free consultation with our trusted doctors and get the best recomendations</p>
+            </div>
+            <div class="cards__card-wrapper">
+                <img src="./images/Details info.png" alt="details board icon">
+                <p class="cards__card-heading text-4xl">Details info</p>
+                <p class="cards__card-subheading text-6xs">Free consultation with our trusted doctors and get the best recomendations</p>
+            </div>
+            <div class="cards__card-wrapper">
+                <img src="./images/Emergancy care.png" alt="Emergency care kit icon">
+                <p class="cards__card-heading text-4xl">Emergency care</p>
+                <p class="cards__card-subheading text-6xs">You can get 24/7 urgent care for yourself or your children and your
+                  lovely family</p>
+            </div>
+            <div class="cards__card-wrapper">
+                <img src="./images/tracking.png" alt="tracking board icon">
+                <p class="cards__card-heading text-4xl">Tracking</p>
+                <p class="cards__card-subheading text-6xs">Track and save your medical history and health data </p>
+            </div>
         </div>
-        <div class="main__card-wrapper">
-          <img src="./images/pharmacy.png" alt="">
-          <p class="main__card-heading"></p>
-          <p class="main__card-subheading"></p>
-        </div>
-        <div class="main__card-wrapper">
-          <img src="./images/Consultation.png" alt="">
-          <p class="main__card-heading"></p>
-          <p class="main__card-subheading"></p>
-        </div>
-        <div class="main__card-wrapper">
-          <img src="./images/Details info.png" alt="">
-          <p class="main__card-heading"></p>
-          <p class="main__card-subheading"></p>
-        </div>
-        <div class="main__card-wrapper">
-          <img src="./images/Emergancy care.png" alt="">
-          <p class="main__card-heading"></p>
-          <p class="main__card-subheading"></p>
-        </div>
-        <div class="main__card-wrapper">
-          <img src="./images/tracking.png" alt="">
-          <p class="main__card-heading"></p>
-          <p class="main__card-subheading"></p>
+        <button class="cards__btn button">Learn more</button>
+    </section>
+    <section class="main__content content">
+      <div class="content__wrapper">
+        <figure class="content__img"><img src="./images/trafalgar-illustration sec.png" alt="picture with people and medicine"></figure>
+        <div class="content__text-wrapper">
+          <p class="content__heading text-6xl ">Leading healthcare providers</p>
+          <hr class="content__line hr">
+          <p class="content__subheading text-2xs">Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone. To us, it’s not just work. We take pride in the solutions we deliver</p>
+          <button class="content__btn button">Learn more</button>
         </div>
       </div>
-      <button class="btn">Learn more</button>
+      <div class="content__wrapper content__wrapper-reverse">
+        <figure class="content__img"><img src="./images/trafalgar-illustration sec2.png" alt="picture with people and medicine"></figure>
+        <div class="content__text-wrapper">
+          <p class="content__heading text-6xl">Download our mobile apps</p>
+          <hr class="content__line line hr">
+          <p class="content__subheading text-2xs">Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely</p>
+          <button class="content__btn button ">Download</button>
+        </div>
+      </div>
     </section>
     <div class="opinion">
       <p class="opinion__title text-4xs2">What our customer are saying</p>
@@ -124,7 +145,7 @@
           <p class="grid__cta text-xs ">Read more <img class="arrow" src="/images/arrow right.svg"></img></p>
         </div>
       </div>
-      <button class="button btn-white">View all</button>
+      <button class="button button--white">View all</button>
     </div>
   </main>
   <footer class="footer text-white">

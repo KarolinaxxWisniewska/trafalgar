@@ -1,21 +1,130 @@
 .header {
     padding: 2rem;
 
-    &__nav :not(&__logo) {
+    &__logo {
+        margin-right: 3rem;
+    }
+
+    &.dots::before {
         display: none;
     }
 
+    &__nav {
+        display: flex;
+        flex-direction: row;
+        max-width: 1307px;
+        padding: 0 3rem;
+    }
+
+    &__list-container {
+        display: none;
+    }
+
+    &__icon {
+        width: 2.8rem;
+        height: 2.8rem;
+        margin-left: auto;
+        fill: none;
+        stroke: $color-grey-200;
+    }
+
     &__heading {
-        padding: 7.6rem 0 2.5rem;
+        padding: 7.6rem 0 0;
+    }
+
+    &__subheading { 
+        margin: 1.5rem 0 2.5rem;
     }
 
     &__content {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        text-align: center;
+        align-items: center;
+        max-width: 1307px;
+        padding: 0 3rem;
     }
 
     &__btn {
-        margin: 4rem 0;
+        margin: 0 0 4rem;
+    }
+}
+
+@media (min-width: 720px) {
+    .header {
+        &__list-container {
+            display: flex;
+            flex-grow: 0;
+            justify-content: space-between;
+            align-items: center;
+            margin-left: auto;
+        }
+
+        &__list-item:not(:last-child) {
+            margin-right: 4rem;
+        }
+
+        &__icon {
+            display: none;
+        }
+
+        &__content {
+            flex-direction: row;
+            margin: 9rem 0 5rem;
+        }
+
+        &__content-column { 
+            display: flex;
+            flex-direction: column;
+            margin-right: 2rem;
+        }
+
+        &__heading {
+            font-size: 3.2rem;
+            line-height: 4.5rem;
+            padding: 0 0 1.5rem;
+            text-align: left;
+        }
+
+        &__subheading {
+            font-size: 1.8rem;
+            line-height: 2.9rem;
+            text-align: left;
+        }
+
+        &__btn {
+            margin: 2rem 0;
+        }
+
+        &__image {
+            width: 60%;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .header {
+        &__content {
+            margin-bottom: 19rem;
+        }
+
+        &__content-column {
+            margin-right: 10rem;
+        }
+
+        &__heading {
+            font-size: 4.8rem;
+            line-height: 5.6rem;
+            font-weight: 700;
+            max-width: 426px;
+        }
+
+        &__subheading {
+            font-size: 2.1rem;
+            line-height: 3.2rem;
+            font-weight: 300;
+            max-width: 445px;
+        }
     }
 }

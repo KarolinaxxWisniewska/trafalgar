@@ -23,7 +23,7 @@
 }
 
 .text-7xl {
-    @include text(3.8rem, 5.6rem);
+    @include text(3.8rem, 5.6rem, 700);
 }
 
 .text-6xl {
@@ -59,7 +59,7 @@
 }
 
 .text-2xs {
-    @include text(1.3rem, 3rem, 300);
+    @include text(1.8rem, 3rem, 300, $color-grey-200);
 }
 
 .text-3xs {
@@ -87,7 +87,7 @@
 }
 
 .text-6xs {
-    @include text(1.6rem, 2.8rem, 300)
+    @include text(1.6rem, 2.8rem, 300, $color-grey-200)
 }
 
 .text-white {

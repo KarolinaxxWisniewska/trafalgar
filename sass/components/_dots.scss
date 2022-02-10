@@ -1,0 +1,55 @@
+.dots {
+    position: relative;
+    overflow: visible;
+
+    &::before,
+    &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        background-image: url(./../images/dots.svg);
+        width: 13.2rem;
+        height: 11.5rem;
+    }
+
+    &::before {
+        content: "";
+    }
+
+    &--top-right::before {
+        top: 0;
+        right: 0;
+    }
+
+    &--bottom-right::before {
+        bottom: 0;
+        right: 0;
+    }
+
+    &--bottom-left::before {
+        bottom: 0;
+        left: 0;
+    }
+
+    &__second::after {
+        content: "";
+    }
+
+    &__second {
+        &--top-right::after {
+            top: 0;
+            right: 0;
+        }
+
+        &--bottom-right::after {
+            bottom: 0;
+            right: 0;
+        }
+
+        &--bottom-left::after {
+            bottom: 0;
+            left: 0;
+        }
+    }
+}
