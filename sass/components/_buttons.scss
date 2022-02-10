@@ -1,5 +1,6 @@
 .button {
-    display: inline-block;
+    font-family: "Mulish";
+    font-weight: 700;
     width: 20rem;
     height: 5.6rem;
     background-color: $button-color;
@@ -9,5 +10,15 @@
     font-weight: 700;
     font-size: 1.6rem;
     color: $color-white-100;
-    text-align: center;
+
+    &--blue {
+        background-color: $color-blue-200;
+        color: $color-white-100;
+    }
+
+    &--white {
+        background-color: $color-white-100;
+        border-color: $color-blue-200;
+        color: $color-blue-200;
+    }
 }

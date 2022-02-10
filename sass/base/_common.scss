@@ -1,13 +1,18 @@
-
 html {
     font-family: "Mulish";
     font-size: 62.5%;
 }
 
 body {
+    color: $color-black;
+    font-family: $font-primary;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+main {
+    width: 100%;
 }
 
 ul {

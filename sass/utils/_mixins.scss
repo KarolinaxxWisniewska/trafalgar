@@ -2,5 +2,8 @@
     font-size: $font-size;
     line-height: $line-height;
     font-weight: $font-weight;
-    color: $color;
+
+    @if ($color !=$color-black) {
+        color: $color;
+    }
 }
