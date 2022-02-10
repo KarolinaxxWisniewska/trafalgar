@@ -571,6 +571,7 @@ img {
 }
 .footer .footer__menu__description {
   padding: 1rem 0;
+  text-shadow: 0.1rem;
 }
 
 @media (min-width: 420px) {
