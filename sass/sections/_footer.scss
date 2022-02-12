@@ -24,7 +24,19 @@
         &__description {
             padding: 1rem 0;
         }
+
+        .menu {
+            &__item {
+                transition: .2s;
+
+                &:hover {
+                    text-decoration: underline;
+                    ;
+                }
+            }
+        }
     }
+
 }
 
 @media (min-width: 420px) {

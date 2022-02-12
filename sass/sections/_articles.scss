@@ -32,6 +32,13 @@
 
     .button {
         margin: 0rem 0 7rem 0;
+        transition-duration: .1s;
+
+        &:hover {
+            background-color: $color-blue-200;
+            color: $color-white-100;
+
+        }
     }
 }
 
