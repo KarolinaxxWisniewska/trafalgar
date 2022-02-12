@@ -5,8 +5,6 @@
     &::before,
     &::after {
         position: absolute;
-        top: 0;
-        left: 0;
         z-index: 1;
         background-image: url(./../images/dots.svg);
         width: 13.2rem;
@@ -29,7 +27,13 @@
 
     &--bottom-left::before {
         bottom: 0;
-        left: 0;
+        left: -4.5rem;
+        z-index: -1;
+    }
+
+    &--bottom-left2::before {
+        bottom: 4.5rem;
+        left: 4.5rem;
     }
 
     &__second::after {
@@ -38,8 +42,9 @@
 
     &__second {
         &--top-right::after {
-            top: 0;
-            right: 0;
+            top: -7rem;
+            right: 2rem;
+            z-index: 2;
         }
 
         &--bottom-right::after {
