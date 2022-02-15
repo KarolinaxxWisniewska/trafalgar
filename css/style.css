@@ -32,21 +32,25 @@ img {
 @font-face {
   font-weight: 400;
   font-family: "Mulish";
+  font-display: swap;
   src: url("./../fonts/Mulish-Regular.ttf") format("truetype");
 }
 @font-face {
   font-family: "Mulish";
   font-weight: 300;
+  font-display: swap;
   src: url("./../fonts/Mulish-ExtraLight.ttf") format("truetype");
 }
 @font-face {
   font-family: "Mulish";
   font-weight: 700;
+  font-display: swap;
   src: url("./../fonts/Mulish-Bold.ttf") format("truetype");
 }
 @font-face {
   font-family: "Mulish";
   font-weight: 800;
+  font-display: swap;
   src: url("./../fonts/Mulish-ExtraBold.ttf") format("truetype");
 }
 .text-7xl {
