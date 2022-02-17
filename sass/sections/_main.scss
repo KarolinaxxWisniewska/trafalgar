@@ -15,76 +15,31 @@
     &__heading {
         margin: 2rem 0;
     }
-}
 
-.opinion {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 1rem;
-    border-radius: 2.4rem;
-    background: $gradient;
-    color: $color-white-100;
-    text-align: center;
+    .slider {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 2rem 0;
 
-    .hr {
-        width: 5%;
-        align-self: center;
-        margin-bottom: 2rem;
-    }
 
-    &__title {
-        padding: 2rem 1rem;
-        color: $color-white-100;
-    }
+        .arrow {
+            width: 3rem;
+            height: 2rem;
+            margin: 0 2rem;
+            fill: $color-blue-400;
+            transition-duration: .2s;
 
-    .comment {
-        &__name {
-            font-size: 2rem;
-            line-height: 2rem;
-            padding: 1rem;
+            &:hover:not(.disabled) {
+                fill: $color-blue-100;
+            }
         }
 
-        &__profession {
-            font-size: 1.3rem;
-            line-height: 2rem;
-        }
+        .dot {
 
-        &__text {
-            padding: 2rem 1rem;
-            font-style: normal;
-            font-weight: 300;
-            font-size: 1.6rem;
-            line-height: 2rem;
-        }
-    }
-}
-
-.slider {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 2rem 0;
-
-    .arrow {
-        width: 3rem;
-        height: 2rem;
-        margin: 0 2rem;
-        fill: $color-blue-400;
-
-        &:hover:not(.disabled) {
-            fill: $color-blue-100;
-        }
-    }
-
-    .dot {
-        &__services {
             display: flex;
-            flex-direction: column;
-            justify-content: center;
-            text-align: center;
             height: 10px;
             width: 10px;
             background-color: $color-blue-100;
@@ -96,118 +51,177 @@
             &.active {
                 opacity: 1;
             }
+
+            &__profession {
+                font-size: 1.3rem;
+                line-height: 2rem;
+            }
+
+            &__text {
+                padding: 2rem 1rem;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 1.6rem;
+                line-height: 2rem;
+            }
         }
     }
-}
 
-@media (min-width: 640px) {
     .opinion {
-        text-align: left;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 1rem;
+        border-radius: 2.4rem;
+        background: $gradient;
+        color: $color-white-100;
+        text-align: center;
 
         .hr {
-            margin-bottom: 0;
+            width: 5%;
+            align-self: center;
+            margin-bottom: 2rem;
+            background-color: $color-white-100;
+        }
+
+        &__title {
+            padding: 2rem 1rem;
+            color: $color-white-100;
         }
 
         .comment {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            &__text {
-                max-width: 42rem;
-                line-height: 3rem;
-                font-weight: 300;
-            }
-
-            .slider__name {
+            &__name {
+                font-size: 2rem;
+                line-height: 2rem;
                 padding: 1rem;
             }
 
-            .slider__profession {
-                padding: 0;
+            &__profession {
+                font-size: 1.3rem;
+                line-height: 2rem;
             }
 
-            .person__photo {
-                margin: 1rem 2rem;
-
-            }
-
-            .person__data {
-                display: flex;
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .slider__text {
-                padding: 0 3rem;
+            &__text {
+                padding: 2rem 1rem;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 1.6rem;
+                line-height: 2rem;
             }
         }
     }
-}
 
-@media (min-width: 960px) {
-    .opinion {
-        justify-content: center;
-        margin: 10rem 1rem;
 
-        .hr {
-            margin-bottom: 5rem;
+
+
+    @media (min-width: 640px) {
+        .opinion {
+            text-align: left;
+
+            .hr {
+                margin-bottom: 0;
+            }
+
+            .comment {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                &__text {
+                    max-width: 42rem;
+                    line-height: 3rem;
+                    font-weight: 300;
+                }
+
+                .slider__name {
+                    padding: 1rem;
+                }
+
+                .slider__profession {
+                    padding: 0;
+                }
+
+                .person__photo {
+                    margin: 1rem 2rem;
+
+                }
+
+                .person__data {
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                }
+
+                .slider__text {
+                    padding: 0 3rem;
+                }
+            }
         }
+    }
 
-        .comment {
-            padding-bottom: 5rem;
+    @media (min-width: 960px) {
+        .opinion {
+            justify-content: center;
+            margin: 2rem 1rem;
 
-            .person__data {
+            .hr {
+                margin-bottom: 5rem;
+            }
 
-                text-align: left;
+            .comment {
+                padding-bottom: 5rem;
+
+                .person__data {
+
+                    text-align: left;
 
 
-                .comment__profession {
+                    .comment__profession {
+                        max-width: 42rem;
+                        font-size: 1.9rem;
+                        line-height: 3rem;
+                        font-weight: 300;
+                        padding-left: 1rem;
+                    }
+
+                    &__photo {
+                        width: 14.1rem;
+                        height: 14.1rem;
+                    }
+                }
+
+                &__text &__proffesion {
                     max-width: 42rem;
                     font-size: 1.9rem;
                     line-height: 3rem;
                     font-weight: 300;
-                    padding-left: 1rem;
                 }
-
-                &__photo {
-                    width: 14.1rem;
-                    height: 14.1rem;
-                }
-            }
-
-            &__text &__proffesion {
-                max-width: 42rem;
-                font-size: 1.9rem;
-                line-height: 3rem;
-                font-weight: 300;
             }
         }
     }
-}
 
-@media (min-width: 1160px) {
-    .opinion {
-        width: 112rem;
-        margin: 15rem 1rem;
+    @media (min-width: 1160px) {
+        .opinion {
+            width: 112rem;
 
-        &__title {
-            padding-top: 0;
-            margin-top: 6.4rem;
-        }
+            &__title {
+                padding-top: 0;
+                margin-top: 6.4rem;
+            }
 
-        .comment {
-            padding-bottom: 6rem;
+            .comment {
+                padding-bottom: 6rem;
 
-            .person__data {
-                margin-right: 7rem;
+                .person__data {
+                    margin-right: 7rem;
+                }
             }
         }
+
     }
 
     .slider {
-        padding-bottom: 21rem;
+        padding: 0 0 8rem 0;
         align-items: center;
-        padding: 0 1rem;
     }
 }

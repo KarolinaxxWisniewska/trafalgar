@@ -28,6 +28,11 @@
             padding-left: 2.5rem;
             padding-bottom: 2.5rem;
             color: $color-blue-300;
+            transition-duration: .2s;
+
+            &:hover {
+                font-size: 1.8rem;
+            }
 
             .arrow {
                 width: 1.5rem;
